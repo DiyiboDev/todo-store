@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Diyibo</title>
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="content">
+        <h1>Todos</h1>
+
+        <form id="form">
+          <fieldset>
+            <input type="text" class="form__input-add" placeholder="Add a task...">
+            <button type="submit">Create Todo</button>
+          </fieldset>
+  
+          <fieldset>
+            <select class="filters" name="" id="">
+              <option value="" disabled>Filter by:</option>
+              <option class="filter__option" value="all" selected>All</option>
+              <option class="filter__option" value="completed">Completed</option>
+              <option class="filter__option" value="pending">Pending</option>
+            </select>
+            <button type="button" id="clear-completed">Clear Completed</button>
+            <p><span id="pending">0</span> pending</p>
+          </fieldset>
+        </form>
+
+        <!-- TODOS -->
+        <ul class="todos"></ul>
+      </div>
+    </div>
+  </body>
+</html>
